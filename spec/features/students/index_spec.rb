@@ -6,14 +6,16 @@ RSpec.describe "As a visitor", type: :feature do
     student_2 = Student.create(name: "Draco Malfoy" , age: 12 , house: "Slytherin" )
     student_3 = Student.create(name: "Neville Longbottom" , age: 11 , house: "Gryffindor" )
 
-    student_1.professors.create(name: "Severus Snape", age: 45, specialty: "Potions")
-    student_1.professors.create(name: "Rubus Hagarid", age: 38 , specialty: "Care of Magical Creatures")
-    student_1.professors.create(name: "Remus Lupin", age: 49 , specialty: "Defense Against The Dark Arts")
+    professor_1 = Professor.create(name: "Severus Snape", age: 45, specialty: "Potions")
+    professor_2 = Professor.create(name: "Rubus Hagarid", age: 38 , specialty: "Care of Magical Creatures")
+    professor_3 = Professor.create(name: "Remus Lupin", age: 49 , specialty: "Defense Against The Dark Arts")
 
-    student_2.professors.create(name: "Severus Snape", age: 45, specialty: "Potions")
-    student_2.professors.create(name: "Rubus Hagarid", age: 38 , specialty: "Care of Magical Creatures")
-
-    student_3.professors.create(name: "Severus Snape", age: 45, specialty: "Potions")
+    ProfessorStudent.create(student_id: student_1.id, professor_id: professor_1.id)
+    ProfessorStudent.create(student_id: student_1.id, professor_id: professor_2.id)
+    ProfessorStudent.create(student_id: student_1.id, professor_id: professor_3.id)
+    ProfessorStudent.create(student_id: student_2.id, professor_id: professor_2.id)
+    ProfessorStudent.create(student_id: student_2.id, professor_id: professor_3.id)
+    ProfessorStudent.create(student_id: student_3.id, professor_id: professor_1.id)
 
     visit "/students"
 

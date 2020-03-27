@@ -2,7 +2,7 @@
   <h1> Students </h1>
   <% @students.each do |student| %>
     <article id="student-<%= student.id %>">
-      <p> <%= student.name %>: <%= student.age %> </p>
+      <p> <%= student.name %>: <%= student.number_of_professors %> </p>
     </article>
   <% end %>
 </main>

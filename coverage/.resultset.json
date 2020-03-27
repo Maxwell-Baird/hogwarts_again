@@ -206,12 +206,31 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
       "/Users/maxwellbaird/turing/2module/hogwarts_again/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/maxwellbaird/turing/2module/hogwarts_again/spec/models/professor_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -283,8 +302,24 @@
           1,
           null
         ]
+      },
+      "/Users/maxwellbaird/turing/2module/hogwarts_again/app/controllers/professors_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/maxwellbaird/turing/2module/hogwarts_again/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1585321860
+    "timestamp": 1585322754
   }
 }

@@ -7,7 +7,7 @@ RSpec.describe "As a visitor", type: :feature do
     student_1 = professor.students.create(name: "Harry Potter" , age: 11 , house: "Gryffindor" )
     student_2 = professor.students.create(name: "Draco Malfoy" , age: 12 , house: "Slytherin" )
     student_3 = professor.students.create(name: "Neville Longbottom" , age: 11 , house: "Gryffindor" )
-    visit "/professors/:id"
+    visit "/professors/#{professor.id}"
 
 
     expect(page).to have_content(student_1.name)

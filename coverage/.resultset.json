@@ -244,6 +244,33 @@
           null
         ]
       },
+      "/Users/maxwellbaird/turing/2module/hogwarts_again/spec/features/students/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/maxwellbaird/turing/2module/hogwarts_again/spec/models/professor_spec.rb": {
         "lines": [
           1,
@@ -352,6 +379,6 @@
         ]
       }
     },
-    "timestamp": 1585323372
+    "timestamp": 1585323637
   }
 }
